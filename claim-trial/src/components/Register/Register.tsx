@@ -9,12 +9,24 @@ type FormData = {
 };
 
 const Register = () => {
-    const { register, handleSubmit,reset,formState:{errors}} = useForm<FormData>();
+    const { register, handleSubmit,resetField,formState:{errors}} = useForm<FormData>
+    ({
+            mode: "onChange",
+            defaultValues: {
+                firstName: "",
+                lastName:"",
+                email:"",
+                password:""
+            },
+    });
 
     const onSubmit = (data:FormData) => {
         console.log("Data", data);
         alert('Registered Successfuly')
-        reset()
+        resetField("firstName")
+        resetField("lastName")
+        resetField("email")
+        resetField("password")
     };
 
     return (
