@@ -2,7 +2,7 @@ import Register from "../Register/Register.tsx";
 
 const Section = () => {
     return (
-        <section className={`md:pt-[6%] md:pb-[6%] md:pr-[11%] md:pl-[11%] pb-[12%] pt-[12%] pr-[6%] pl-[6%] w-full min-h-screen md:h-full bg-[url('/src/assets/background.svg')] md:flex-row flex-col flex md:gap-4 gap-12 items-center justify-between`}>
+        <section className={`md:pt-[6%] md:pb-[6%] md:pr-[11%] md:pl-[11%] pb-[12%] pt-[12%] pr-[6%] pl-[6%] w-full min-h-screen md:h-full bg-[url('/src/assets/background.svg')] md:flex-row flex-col flex md:gap-24 gap-12 items-center justify-between`}>
 
             <div className='md:w-1/2 w-full flex flex-col md:gap-8 gap-6'>
                 <h1 className='font-poppins font-bold text-white md:text-[50px] text-[28px] leading-[36px] md:leading-[55px] tracking-[-0.29px] md:text-start text-center md:tracking-[-0.52px]'>Learn to code by watching others</h1>
